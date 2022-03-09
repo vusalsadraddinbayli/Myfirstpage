@@ -1,0 +1,7 @@
+.section .container .display-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.section .container .display-flex .box2{
+    background-color: red;
+}
