@@ -1,0 +1,148 @@
+.contents {
+    position: relative;
+    height: 500px;
+    width: 900px;
+    background-color: red;
+}
+
+.absolute-img {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.absolute-img2 {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+
+.container {
+    background-color: black;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.container .div1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: div1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.container .div2 {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: purple;
+    animation-name: div2;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes div1 {
+    0% {
+        left: 20px;
+    }
+    75% {
+        background-color: blue;
+        left: 10px;
+    }
+    100% {
+        left: 10px;
+        background-color: aquamarine;
+    }
+}
+
+@keyframes div2 {
+    0% {
+        left: 20px;
+    }
+    75% {
+        background-color: green;
+        left: 60px;
+    }
+    100% {
+        left: 20px;
+        background-color: aquamarine;
+    }
+}
+
+.display-flex {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.display-flex .div-border {
+    height: 20px;
+    width: 200px;
+    background-color: white;
+}
+
+.img1 {
+    position: absolute;
+    left: -300px;
+    animation-name: nupaqadi;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.img2 {
+    position: absolute;
+    left: 0px;
+    animation-name: dosan;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nupaqadi {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: 1200px;
+    }
+}
+
+@keyframes dosan {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 1500px;
+    }
+}
