@@ -1,4 +1,4 @@
-.contents {
+/*.contents {
     position: relative;
     height: 500px;
     width: 900px;
@@ -89,24 +89,26 @@
         left: 20px;
         background-color: aquamarine;
     }
-}
+}*/
 
-.display-flex {
+.container .display-flex {
     padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-around;
+    background-color: black;
 }
 
-.display-flex .div-border {
+.container .display-flex .div-border {
     height: 20px;
     width: 200px;
     background-color: white;
 }
 
-.img1 {
+.container .img1 {
     position: absolute;
     left: -300px;
-    animation-name: nupaqadi;
+    animation-name: wolf;
     transition: .5s ease;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
@@ -116,10 +118,10 @@
     animation-iteration-count: infinite;
 }
 
-.img2 {
+.container .img2 {
     position: absolute;
     left: 0px;
-    animation-name: dosan;
+    animation-name: rabbit;
     transition: .5s ease;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
@@ -129,7 +131,7 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes nupaqadi {
+@keyframes wolf {
     0% {
         left: -300px;
     }
@@ -138,7 +140,7 @@
     }
 }
 
-@keyframes dosan {
+@keyframes rabbit {
     0% {
         left: 0px;
     }
