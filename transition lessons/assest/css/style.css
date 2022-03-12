@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    padding-top: 200px;
+}
+
+.section .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .container form input {
+    border: 1px colid #ccc;
+    background-color: #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 10px 4px;
+    border: none;
+    margin-left: 5px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.section .container form input:hover {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.section .container form input:focus {
+    transform: translateY(10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+.section .container form button {
+    margin-left: 5px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.section .container form button:hover {
+    background-color: black;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    transform: rotate(-40deg) translateX(30px);
+    -webkit-transform: rotate(-40deg) translateX(30px);
+    -moz-transform: rotate(-40deg) translateX(30px);
+    -ms-transform: rotate(-40deg) translateX(30px);
+    -o-transform: rotate(-40deg) translateX(30px);
+}
+
+.section .container .card {
+    border: 1.3px solid #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.section .container .card .card-img-top {
+    width: 200px;
+    height: 200px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.section .container .display-flex .card .card-img-top:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.img-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .container .display-flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .container .display-flex .card .card-body .card-title,
+.section .container .display-flex .card .card-body .card-text {
+    text-align: center;
+}
+
+.section .container .display-flex .card .card-body .button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .container .display-flex .card .card-body .button-box a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 10px 20px;
+}
