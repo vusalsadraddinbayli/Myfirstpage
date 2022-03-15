@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section .container .grid-systems{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    background-color: black;
+    border: 200px solid;
+    grid-gap: 10px;
+}
+.section .container .grid-systems .border1 .grid-system1,
+.section .container .grid-systems .border2 .grid-system2,
+.section .container .grid-systems .border3 .grid-system3{
+    height: auto;
+    width: auto;
+    border: 2px solid white;
+    margin-bottom: 2px;
+}
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 50px;
+    padding: 5px;
+}
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon1,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon1,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon1,
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon2,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon2,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon2,
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon3,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon3,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon3{
+    border: 1px solid white;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.section .container .grid-systems .border1 .grid-system1 .box2 .cart,
+.section .container .grid-systems .border2 .grid-system2 .box2 .cart,
+.section .container .grid-systems .border3 .grid-system3 .box2 .cart{
+    overflow: hidden;
+}
+.section .container .grid-systems .border1 .grid-system1 .box2 .cart img,
+.section .container .grid-systems .border2 .grid-system2 .box2 .cart img,
+.section .container .grid-systems .border3 .grid-system3 .box2 .cart img{
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.section .container .grid-systems .border1 .grid-system1 .box3 .cart .my-bordered-icon,
+.section .container .grid-systems .border2 .grid-system2 .box3 .cart .my-bordered-icon,
+.section .container .grid-systems .border3 .grid-system3 .box3 .cart .my-bordered-icon{
+    color: rgba(255, 251, 0, 0.363);
+    margin-top: 10px;
+}
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .p,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .p,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .p{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+}
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .name1,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .name1,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .name1{
+    color: white;
+    margin-top: 15px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .p1,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .p1,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .p1{
+    color: white;
+    text-decoration: line-through;
+    margin-left: 100px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .p2,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .p2,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .p2{
+    color: white;
+    margin-right: 100px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon2:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon2:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon2:hover,
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon3:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon3:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon3:hover{
+    background-color: white;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon2:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon2:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon2:hover{
+    color: red;
+}
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon1:hover,
+.section .container .grid-systems .border1 .grid-system1 .box1 .cart .my-bordered-icon3:hover,
+.section .container .grid-systems .border2 .grid-system2 .box1 .cart .my-bordered-icon3:hover,
+.section .container .grid-systems .border3 .grid-system3 .box1 .cart .my-bordered-icon3:hover{
+    color: black;
+}
+.section .container .grid-systems .border1 .grid-system1 .box2 .cart img:hover,
+.section .container .grid-systems .border2 .grid-system2 .box2 .cart img:hover,
+.section .container .grid-systems .border3 .grid-system3 .box2 .cart img:hover,
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .name1:hover,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .name1:hover,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .name1:hover,
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .p1:hover,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .p1:hover,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .p1:hover,
+.section .container .grid-systems .border1 .grid-system1 .box4 .cart .p2:hover,
+.section .container .grid-systems .border2 .grid-system2 .box4 .cart .p2:hover,
+.section .container .grid-systems .border3 .grid-system3 .box4 .cart .p2:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
