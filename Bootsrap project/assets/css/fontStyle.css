@@ -7,8 +7,17 @@
 :root {
     --bg-black: black;
     --color-white: white;
+    --blue: #8997bd;
+    --color-2: #d4dbe5;
+    --card-bg: #17171c;
 }
 
 body {
     background-color: var(--bg-black);
+}
+
+p,
+h1,
+h2 {
+    color: var(--color-white);
 }
