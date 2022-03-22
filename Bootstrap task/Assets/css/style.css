@@ -1,0 +1,31 @@
+@import url(fontstyle.css);
+.insights .container .text-home .button-box button{
+    border-radius: 20px;
+    background-color: rgb(63, 62, 62);
+    color: #69c380;
+    padding: 10px 20px
+}
+.insights .container .text-home p,
+.insights .container .text-home h1{
+    color: white;
+    text-align: center;
+}
+.insights .container .row .col-md-4 .card{
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    background-color: var(--card-bg);
+    height: auto;
+}
+.insights .container .row .col-md-4 .card a{
+    color: white;
+    text-align: center;
+}
+.insights .container .row .col-md-4 .card .card-body img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.insights .container .row .col-md-4 .card .card-body h5,
+.insights .container .row .col-md-4 .card .card-body p,
+.insights .container .row .col-md-4 .card .card-body a{
+    color: white;
+}

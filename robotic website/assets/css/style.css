@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.home .container .row .col-md-6 .home-text-content p,
+.home .container .row .col-md-6 .home-text-content h1{
+    color: white;
+}
+.home-text-content{
+    padding-top:  150px !important;
+}
+@media screen and (max-width:768px){
+    .home .container .row .col-md-6 .home-text-content p,
+    .home .container .row .col-md-6 .home-text-content h1{
+        text-align: center;
+    }
+    .home .container .row .col-md-6 .button-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

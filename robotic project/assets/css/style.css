@@ -1,0 +1,140 @@
+@import url(fontstyle.css);
+.home .container .row .col-md-6 .home-text-content{
+    margin-top: 100px;
+}
+.home .container .row .col-md-6 .home-text-content .button-box button:hover{
+    transition: .5s ease;
+    background-color: var(--bg-white);
+}
+.home .container .row .col-md-6 .home-text-content h1{
+    font-size: 60px;
+}
+.home .container .row .col-md-6 .home-text-content h1,
+.home .container .row .col-md-6 .home-text-content h6{
+    color: var(--color-white);
+}
+.home .container .row .col-md-6 .home-text-content p{
+    color: var(--color-blue);
+    letter-spacing: var(--letter-spacing);
+}
+.home .container .row .col-md-6 .home-text-content .button-box button{
+    background-color: var(--bg-blue);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 195px;
+    height: 65px;
+}
+.talent .container .row .col-md-6{
+    color: var(--color-white);
+}
+.videopart .container .video-content .icon{
+    position: relative;
+}
+.videopart .container .video-content .icon i{
+    color: var(--color-white);
+    position: absolute;
+    bottom: 300px;
+    left: 510px;
+}
+.offer .container h6{
+    color: var(--color-blue);
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    margin-top: 300px;
+}
+.offer .container h1{
+    color: var(--color-white);
+    text-align: center;
+}
+.offer .container .content .row .col-md-4 .card{
+    background-color: var(--bg-grey);
+    height: 280px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.offer .container .content .row .col-md-4 .card i,
+.offer .container .content .row .col-md-4 .card h3,
+.offer .container .content .row .col-md-4 .card p{
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.offer .container .content .row .col-md-4 .card:hover{
+    transition: .5s ease ;
+    transform: translateY(-10px);
+    border-color: var(--color-blue);
+}
+.companypart{
+    background-color: var(--bg-grey);
+    height: 550px;
+}
+.companypart .container{
+    margin-top: 250px;
+    padding-top: 70px;
+}
+.companypart .container .p1{
+    color: var(--bg-blue);
+    text-align: center;
+}
+.companypart .container h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: var(--letter-spacing);
+}
+.companypart .container h2,
+.companypart .container .p2{
+    color: var(--color-white);
+    text-align: center;
+}
+.companypart .container .content .row .col-md-3 .div .text-box {
+    margin-left: 25px;
+}
+.companypart .container .content .row .col-md-3 .div .text-box h1,
+.companypart .container .content .row .col-md-3 .div .text-box p{
+    color: var(--color-white);
+}
+.companypart .container .content .row .col-md-3 .div i{
+    color: var(--color-blue);
+}
+.valuepart .container{
+    margin-top: 170px;
+}
+.valuepart .container h1{
+    color: var(--color-white);
+    text-align: center;
+}
+.valuepart .container p{
+    color: var(--color-blue);
+    text-align: center;
+}
+.valuepart .container .content .row .col-md-4 .card{
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 60px
+}
+.valuepart .container .content .row .col-md-4 .card{
+    background-color: var(--bg-black);
+    height: 300px;
+    border-radius: 15px;
+}
+.valuepart .container .content .row .col-md-4 .card i,
+.valuepart .container .content .row .col-md-4 .card h2,
+.valuepart .container .content .row .col-md-4 .card p{
+    color: var(--color-white);
+}
+.valuepart .container .content .row .col-md-4 .card p,
+.valuepart .container .content .row .col-md-4 .card h2{
+    margin-top: 15px;
+}
+.valuepart .container .content .row .col-md-4 .card:hover{
+    transition: .5s ease;
+    transform: translateY(-10px);
+    border-color: var(--color-blue);
+}
