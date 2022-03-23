@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-black: black;
+    --color-white: white;
+    --blue: #8997bd;
+    --color-2: #d4dbe5;
+    --card-bg: #17171c;
+}
+
+body {
+    background-color: var(--bg-black);
+}
