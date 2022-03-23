@@ -1,4 +1,18 @@
 @import url(fontstyle.css);
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    text-align: center;
+}
+.home{
+    margin-top: 80px;
+}
 .home .container .row .col-lg-6 .home-text-content{
     margin-top: 100px;
 }
@@ -47,7 +61,7 @@
     color: var(--color-blue);
     letter-spacing: var(--letter-spacing);
     text-align: center;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .offer .container h1{
     color: var(--color-white);
@@ -73,6 +87,9 @@
     transition: .5s ease ;
     transform: translateY(-10px);
     border-color: var(--color-blue);
+}
+.offer .container .content .row .col-lg-4 .card:hover i{
+    color: var(--color-blue);
 }
 .companypart{
     background-color: var(--bg-grey);
@@ -143,4 +160,18 @@
     transition: .5s ease;
     transform: translateY(-10px);
     border-color: var(--color-blue);
+}
+@media screen and (max-width:996px){
+    .home .container .row .col-lg-6 .home-text-content h1,
+    .home .container .row .col-lg-6 .home-text-content .button-box,
+    .home .container .row .col-lg-6 .home-text-content h6,
+    .home .container .row .col-lg-6 .home-text-content p{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .img-home{
+        width:75%;
+    }
 }
