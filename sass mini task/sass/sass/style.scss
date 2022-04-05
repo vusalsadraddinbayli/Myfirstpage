@@ -1,0 +1,25 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_reset.scss';
+
+.section {
+    .container {
+        .row {
+
+            margin-top: 20px;
+
+            h5 {
+                color: $grey;
+            }
+
+            .button-box {
+                button {
+                    background-color: $bg-blue;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+    }
+}
