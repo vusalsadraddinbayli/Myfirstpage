@@ -1,0 +1,106 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_reset.scss';
+/*navbar start*/
+.navbar{
+    background-color: white !important;
+    box-shadow: 1px -1px 20px 0px rgba(0,0,0,0.33); 
+    .container-fluid{
+        .navbar-brand{
+            margin-left: 100px;
+            color: $greycolor;
+            i{
+                color: $orangecolor;
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                margin-left: 850px;
+            }
+        }
+    }
+}
+/*navbar end*/
+/*home start*/
+.home{
+    .container-fluid{
+        .row{
+            
+            .col-lg-6{
+                
+                p,
+                .button-box,
+                h1{
+                    margin-left: 100px;
+                }
+                h1{
+                    margin-top: 150px;
+                }
+                .image-box{
+                    position: relative;
+                    width: 100%;
+                    height: 400px;
+                    img{
+                        animation-name: image;
+                        animation-duration: 4s;
+                        animation-iteration-count: infinite;
+                        position: absolute;
+                        top: 0; 
+                        width: 70%;
+                    }
+                }
+                .button-box{
+                    
+                    button{
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        color: $orangecolor;
+                        border-color: $orangecolor;
+                        border-radius: 5px;
+                        transition: .5s ease;
+                        border: none;
+                        transition: .8s ease;
+                        &:hover{
+                            letter-spacing: 1px;
+                            background-color: $orangecolor;
+                            color: $whitecolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes image{
+    0% {top: 0;};
+    25% {top: 10%;};
+    50% {top: 15%;};
+    100% {top: 0;};
+}
+@media screen and (max-width: 996px){
+    .image-box{
+        height: 300px !important;
+        img{
+            width: 100% !important;
+        }
+    }
+}
+    
+/*home end*/
+.dishes{
+    position: relative;
+    margin-top: 150px;
+    .container{
+        .row{
+            .col-lg-4{
+                .dishes-card{
+                    border: 1px solid #ccc;
+                    height: auto;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
