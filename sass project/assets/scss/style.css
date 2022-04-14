@@ -10,6 +10,10 @@
   background-color: white !important;
   -webkit-box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
           box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .navbar .container-fluid .navbar-brand {
@@ -27,6 +31,10 @@
 
 /*navbar end*/
 /*home start*/
+.home {
+  margin-top: 70px;
+}
+
 .home .container-fluid .row .col-lg-6 p,
 .home .container-fluid .row .col-lg-6 .button-box,
 .home .container-fluid .row .col-lg-6 h1 {
@@ -63,11 +71,9 @@
   color: #ff6f00;
   border-color: #ff6f00;
   border-radius: 5px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
   border: none;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
 }
 
 .home .container-fluid .row .col-lg-6 .button-box button:hover {
@@ -116,9 +122,14 @@
 }
 
 /*home end*/
+/*dishes start*/
 .dishes {
   position: relative;
   margin-top: 150px;
+}
+
+.dishes .container .row h1 .span-1 {
+  color: #ff6f00;
 }
 
 .dishes .container .row .col-lg-4 .dishes-card {
@@ -126,4 +137,149 @@
   height: auto;
   padding: 20px;
 }
+
+/*dishes end*/
+/*foods start*/
+.foods .container .row h1 .span-1 {
+  color: #ff6f00;
+}
+
+.foods .container .row .col-lg-4 .foods-card {
+  border: 1px solid #ccc;
+  height: 450px;
+  -webkit-box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+}
+
+.foods .container .row .col-lg-4 .foods-card .image-box {
+  padding: 20px;
+  position: relative;
+}
+
+.foods .container .row .col-lg-4 .foods-card .image-box img {
+  width: 100%;
+  height: 250px;
+}
+
+.foods .container .row .col-lg-4 .foods-card .image-box .h2-box h2 {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  z-index: 1;
+  color: white;
+  background-color: #ff6f00;
+  border-radius: 5px;
+  display: inline;
+  font-size: 25px;
+}
+
+.foods .container .row .col-lg-4 .foods-card h1 {
+  font-size: 30px;
+}
+
+.foods .container .row .col-lg-4 .foods-card .foods-icon i {
+  color: rgba(211, 185, 38, 0.664);
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.foods .container .row .col-lg-4 .foods-card .button-box button {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid #ff6f00;
+  background-color: white;
+  color: #ff6f00;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.foods .container .row .col-lg-4 .foods-card .button-box button:hover {
+  letter-spacing: 1px;
+  background-color: #ff6f00;
+  color: white;
+}
+
+/*foods end*/
+/*works start*/
+.works .container .row h1 .span-1 {
+  color: #ff6f00;
+}
+
+.works .container .row .col-lg-3 .image-box img {
+  border: 10px solid white;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+}
+
+.works .container .row .col-lg-3 p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/*works end*/
+/*review start*/
+.review .container .row h1 .span-1 {
+  color: #ff6f00;
+}
+
+.review .container .row .col-lg-4 .review-card {
+  margin-top: 40px;
+  border: 8px solid white;
+  height: 450px;
+  background-color: #353434;
+  -webkit-box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+  height: auto;
+}
+
+.review .container .row .col-lg-4 .review-card .position.relative {
+  position: relative;
+}
+
+.review .container .row .col-lg-4 .review-card .position.relative .image-box {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+.review .container .row .col-lg-4 .review-card .position.relative .image-box img {
+  width: 100%;
+}
+
+.review .container .row .col-lg-4 .review-card h3 {
+  color: white;
+  padding-top: 60px;
+}
+
+.review .container .row .col-lg-4 .review-card .review-icon i {
+  color: #ff6f00;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.review .container .row .col-lg-4 .review-card p {
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/*review end*/
+/*order start*/
+.order .container .row h1 .span-1 {
+  color: #ff6f00;
+}
+
+/*order end*/
 /*# sourceMappingURL=style.css.map */
