@@ -12,14 +12,17 @@
     right: 0;
     left: 0;
     z-index: 2;
+
     .container-fluid {
         .navbar-brand {
             margin-left: 100px;
             color: $greycolor;
+
             i {
                 color: $orangecolor;
             }
         }
+
         .collapse {
             .navbar-nav {
                 margin-left: 850px;
@@ -36,16 +39,19 @@
 
 .home {
     margin-top: 70px;
+
     .container {
         .row {
             .col-lg-6 {
                 h1 {
                     margin-top: 150px;
                 }
+
                 .image-box {
                     position: relative;
                     width: 70%;
                     height: 400px;
+
                     img {
                         animation-name: image;
                         animation-duration: 4s;
@@ -56,6 +62,7 @@
                         height: 100%
                     }
                 }
+
                 .button-box {
                     button {
                         @include padding;
@@ -64,6 +71,7 @@
                         border-radius: 5px;
                         transition: .6s ease;
                         border: none;
+
                         &:hover {
                             letter-spacing: 1px;
                             background-color: $orangecolor;
@@ -80,18 +88,25 @@
     0% {
         top: 0;
     }
+
     ;
+
     25% {
         top: 10%;
     }
+
     ;
+
     50% {
         top: 15%;
     }
+
     ;
+
     100% {
         top: 0;
     }
+
     ;
 }
 
@@ -103,6 +118,7 @@
                     h1 {
                         margin-top: 20px;
                     }
+
                     .image-box {
                         width: 100% !important;
                         height: 350px !important;
@@ -122,6 +138,7 @@
 .dishes {
     position: relative;
     margin-top: 150px;
+
     .container {
         .row {
             h1 {
@@ -129,6 +146,7 @@
                     color: $orangecolor;
                 }
             }
+
             .col-lg-4 {
                 .dishes-card {
                     border: 1px solid #ccc;
@@ -154,19 +172,23 @@
                     color: $orangecolor;
                 }
             }
+
             .col-lg-4 {
                 .foods-card {
                     border: 1px solid #ccc;
                     height: auto;
                     padding-bottom: 20px;
                     box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+
                     .image-box {
                         padding: 20px;
                         position: relative;
+
                         img {
                             width: 100%;
                             height: 250px;
                         }
+
                         .h2-box {
                             h2 {
                                 position: absolute;
@@ -181,9 +203,11 @@
                             }
                         }
                     }
+
                     h1 {
                         font-size: 30px;
                     }
+
                     .foods-icon {
                         i {
                             color: $goldcolor;
@@ -191,6 +215,7 @@
                             margin-top: 10px;
                         }
                     }
+
                     .button-box {
                         button {
                             margin-top: 20px;
@@ -200,6 +225,7 @@
                             background-color: $whitecolor;
                             color: $orangecolor;
                             transition: .6s ease;
+
                             &:hover {
                                 letter-spacing: 1px;
                                 background-color: $orangecolor;
@@ -227,6 +253,7 @@
                     color: $orangecolor;
                 }
             }
+
             .col-lg-3 {
                 .image-box {
                     img {
@@ -235,6 +262,7 @@
                         box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
                     }
                 }
+
                 p {
                     margin-top: 10px;
                     font-size: 20px;
@@ -258,6 +286,7 @@
                     color: $orangecolor;
                 }
             }
+
             .col-lg-4 {
                 .review-card {
                     margin-top: 40px;
@@ -265,26 +294,32 @@
                     background-color: $darkgrey;
                     box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
                     height: auto;
+
                     .position-relative {
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         .image-box {
                             position: absolute;
-                            top: -60px;
+                            top: -70px;
                             border: 8px solid $whitecolor;
                             border-radius: 50%;
+                            width: 50%;
+
                             img {
                                 width: 100%;
                                 border-radius: 50%;
                             }
                         }
                     }
+
                     h3 {
                         color: $whitecolor;
                         padding-top: 160px;
                     }
+
                     .review-icon {
                         i {
                             color: $orangecolor;
@@ -292,6 +327,7 @@
                             margin-top: 10px;
                         }
                     }
+
                     p {
                         font-size: 17px;
                         padding-top: 20px;
@@ -315,17 +351,107 @@
 /*order start*/
 
 .order {
+    h1 {
+        .span-1 {
+            color: $orangecolor;
+        }
+    }
+
     .container {
         box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
+
         .row {
-            h1 {
-                .span-1 {
-                    color: $orangecolor;
+            .col-md-4 {
+                .order-image-box {
+                    width: 100%;
+                    padding-bottom: 10px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+
+            }
+
+            .col-md-8 {
+                form {
+                    width: 100%;
+                    input {
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        @include padding-order;
+                    }
+
+                    .address-input {
+                        padding-bottom: 150px;
+
+                    }
+                }
+
+                .button-box {
+                    button {
+                        margin-top: 60px;
+                        margin-left: 10px;
+                        @include padding;
+                        border-radius: 5px;
+                        border: 2px solid $orangecolor;
+                        background-color: $whitecolor;
+                        color: $orangecolor;
+                        transition: .6s ease;
+
+                        &:hover {
+                            letter-spacing: 1px;
+                            background-color: $orangecolor;
+                            color: $whitecolor;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .display-none-res{
+        display: none !important;
+    }
+    .w-100-res{
+        width: 100% !important;
+    }
+}
+
+/*order end*/
+/*footer start*/
+.footer {
+    background-color: $blackcolor;
+
+    .container {
+        .button-box {
+            padding-bottom: 80px;
+
+            button {
+                margin-top: 60px;
+                margin-left: 20px;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                border: 2px solid $orangecolor;
+                background-color: $blackcolor;
+                color: $orangecolor;
+                transition: .6s ease;
+
+                &:hover {
+                    letter-spacing: 1px;
+                    background-color: $orangecolor;
+                    color: $whitecolor;
                 }
             }
         }
     }
 }
 
-
-/*order end*/
+/*footer end*/

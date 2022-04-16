@@ -249,9 +249,10 @@
 
 .review .container .row .col-lg-4 .review-card .position-relative .image-box {
   position: absolute;
-  top: -60px;
+  top: -70px;
   border: 8px solid white;
   border-radius: 50%;
+  width: 50%;
 }
 
 .review .container .row .col-lg-4 .review-card .position-relative .image-box img {
@@ -283,14 +284,102 @@
 
 /*review end*/
 /*order start*/
+.order h1 .span-1 {
+  color: #ff6f00;
+}
+
 .order .container {
   -webkit-box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
           box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
 }
 
-.order .container .row h1 .span-1 {
+.order .container .row .col-md-4 .order-image-box {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.order .container .row .col-md-4 .order-image-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.order .container .row .col-md-8 form {
+  width: 100%;
+}
+
+.order .container .row .col-md-8 form input {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 70px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.order .container .row .col-md-8 form .address-input {
+  padding-bottom: 150px;
+}
+
+.order .container .row .col-md-8 .button-box button {
+  margin-top: 60px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid #ff6f00;
+  background-color: white;
   color: #ff6f00;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.order .container .row .col-md-8 .button-box button:hover {
+  letter-spacing: 1px;
+  background-color: #ff6f00;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .display-none-res {
+    display: none !important;
+  }
+  .w-100-res {
+    width: 100% !important;
+  }
 }
 
 /*order end*/
+/*footer start*/
+.footer {
+  background-color: black;
+}
+
+.footer .container .button-box {
+  padding-bottom: 80px;
+}
+
+.footer .container .button-box button {
+  margin-top: 60px;
+  margin-left: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #ff6f00;
+  background-color: black;
+  color: #ff6f00;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.footer .container .button-box button:hover {
+  letter-spacing: 1px;
+  background-color: #ff6f00;
+  color: white;
+}
+
+/*footer end*/
 /*# sourceMappingURL=style.css.map */
