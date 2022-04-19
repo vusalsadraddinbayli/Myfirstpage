@@ -507,4 +507,14 @@
 }
 
 /*ring end*/
+/*tablepart start*/
+.tablepart .container {
+  width: 100%;
+}
+
+.tablepart .container form {
+  width: 100%;
+}
+
+/*tablepart end*/
 /*# sourceMappingURL=style.css.map */
