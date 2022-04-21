@@ -414,6 +414,7 @@
 .order .container .row .col-md-4 .order-image-box {
   width: 100%;
   padding-bottom: 10px;
+  margin-top: 60px;
 }
 
 .order .container .row .col-md-4 .order-image-box img {
@@ -427,7 +428,7 @@
 
 .order .container .row .col-md-8 form input {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-right: 20px;
   padding-left: 10px;
   padding-right: 70px;
   padding-top: 5px;
@@ -439,7 +440,8 @@
 }
 
 .order .container .row .col-md-8 .button-box button {
-  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   margin-left: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -499,15 +501,14 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  button {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
 /*footer end*/
-/*tablepart start*/
-.tablepart .container {
-  width: 100%;
-}
-
-.tablepart .container form {
-  width: 100%;
-}
-
-/*tablepart end*/
 /*# sourceMappingURL=style.css.map */

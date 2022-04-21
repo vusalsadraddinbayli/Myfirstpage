@@ -1,0 +1,88 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_reset.scss';
+
+/*home start*/
+section {
+    background-color: $purplecolor;
+
+    header {
+        .container {
+            .navbar-part {
+                ul {
+                    list-style: none;
+
+                    .nav-item {
+                        .nav-link {
+                            text-decoration: none;
+                            color: $whitecolor;
+                        }
+                    }
+                }
+            }
+
+            .search-box {
+                .search-border {
+                    
+
+                    .search-item {
+                        border: 1px solid $blackcolor;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .home {
+        .container {
+            .row {
+                .col-lg-5 {
+                    margin-top: 100px;
+
+                    h3 {
+                        color: $whitecolor;
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                        letter-spacing: 4px;
+                    }
+
+                    h1 {
+                        font-size: 50px;
+                        color: $whitecolor;
+                        font-weight: 600;
+                        line-height: 65px;
+                    }
+
+                    p {
+                        color: $whitecolor;
+                        width: 80%;
+                        margin-bottom: 50px;
+                        font-size: 18px;
+                    }
+
+                    .home-button-box {
+                        margin-bottom: 15px;
+                        margin-right: 30px;
+
+                        button {
+                            padding: 10px 29px;
+                            border-radius: 5%;
+                            border-color: $whitecolor;
+                            color: $whitecolor;
+                            background-color: transparent;
+
+                        }
+
+                        .home-link {}
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/*home end*/
