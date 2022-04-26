@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -82,11 +83,11 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             First Level
                                         </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">Grid 2 Column</a></li>
-                                                <li><a class="dropdown-item" href="#">Grid 3 Column</a></li>
-                                                <li><a class="dropdown-item" href="#">Grid Full Width 3 Column</a></li>
-                                            </ul>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Grid 2 Column</a></li>
+                                            <li><a class="dropdown-item" href="#">Grid 3 Column</a></li>
+                                            <li><a class="dropdown-item" href="#">Grid Full Width 3 Column</a></li>
+                                        </ul>
                                     </ul>
                                 </div>
                             </li>
@@ -111,7 +112,7 @@
                     </nav>
                     <div class="search-box d-flex">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <div class="search-border ms-2">
+                        <div class="search-border ms-3">
                             <a class="search-item" href="">Get a Quote</a>
                         </div>
                     </div>
@@ -121,19 +122,24 @@
         </header>
         <div class="home mt-5 pt-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h3>IT Design & Consulting</h3>
-                        <h1>Our Intelligent Technology Solutions and Services</h1>
-                        <p>Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion the consectetur nec odio aea the dumm text.</p>
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="home-box">
+                            <h3>IT Design & Consulting</h3>
+                            <h1>Our Intelligent Technology Solutions and Services</h1>
+                            <p>Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion the consectetur nec odio
+                                aea the dumm text.</p>
+                        </div>
                         <div class="home-button-box d-flex">
                             <button>Our Sevices</button>
-                            <a class="home-link" href="https://youtu.be/1iIZeIy7TqM"><i class="fa-solid fa-circle-play"></i></a> <h5>Watch Video</h5>
+                            <a class="home-link" href="https://youtu.be/1iIZeIy7TqM"><i
+                                    class="fa-solid fa-circle-play"></i></a>
+                            <h5>Watch Video</h5>
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <div class="home-image-box">
-                            <img src="assets/image/illustration1.png" alt="">
+                        <div class="home-image-box" data-aos="zoom-in" data-aos-duration="2000">
+                            <img class="w-100" src="assets/image/illustration1.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -142,6 +148,180 @@
 
     </section>
     <!--home end-->
+    <!--agency start-->
+    <section class="agency mt-5 pt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 ">
+                    <div class="agency-image-box">
+                        <img src="assets/image/about2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 responsive-order">
+                    <div class="agency-box">
+                        <h2>Exclusive Agency For Technology Provide Soluation</h2>
+                        <p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti at bulum
+                            nec odio aea the dumm ipsumm ipsum dolocons is suada a and fadolorit to the consectetur
+                            elit.</p>
+                        <div class="list-box">
+                            <ul class="list-item ps-0">
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check me-3"></i>
+                                    <p>Lorem ipsum dolarorit ametion consectetur elit.</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check me-3"></i>
+                                    <p>Vesti at bulum nec odio aea the dumm ipsumm ipsum</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check me-3"></i>
+                                    <p>Grursus mal suada faci lisis Lorem ipsum dolarorit.</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check me-3"></i>
+                                    <p>Suada faci lisis Lorem ipsum dolarorit.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="agency-button-box">
+                            <button>Read More <i class="fa-solid fa-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--agency end-->
+    <!--services start-->
+    <section class="services">
+        <div class="container">
+            <div class="services-text-box text-center">
+                <h2>We Provide IT Services</h2>
+                <i class="fa-solid fa-rocket"></i>
+                <p class="service-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting has been
+                    the industry's standard dummy text ever since</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+                                    <path class="path-1"
+                                        d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z">
+                                    </path>
+                                </svg>
+                                <i class="fa-solid fa-bezier-curve icon-1"></i>
+                            </div>
+                            <h3>Interface Design</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105px" height="80px">
+                                    <path class="path-2" d="M104.768,46.596 C103.512,53.499 97.269,58.301 91.117,61.679 C77.841,68.967 63.002,72.833 48.310,76.516 C40.421,78.492 32.367,80.451 24.252,79.893 C23.977,79.874 23.702,79.851 23.426,79.826 C15.577,79.094 7.660,75.615 3.385,69.025 C0.518,64.605 -0.391,59.254 0.154,53.978 C0.481,50.815 1.330,47.677 2.594,44.784 C4.373,40.709 6.870,37.034 9.730,33.620 C12.289,30.568 15.138,27.725 18.038,25.002 C24.140,19.273 30.567,13.891 37.279,8.890 C41.647,5.637 46.299,2.342 51.494,0.551 C56.951,-1.331 61.008,1.926 65.771,4.608 C72.267,8.264 78.490,12.408 84.374,16.984 C86.832,18.895 89.229,20.884 91.564,22.945 C92.385,23.670 93.201,24.402 94.006,25.145 C96.362,27.319 98.710,29.770 100.630,32.428 C103.718,36.705 105.691,41.522 104.768,46.596 Z"></path>
+                                </svg>
+                                <i class="fa-solid fa-users-rays icon-2"></i>
+                            </div>
+                            <h3>SEO & SMM services</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+                                    <path
+                                        d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z">
+                                    </path>
+                                </svg>
+                                <i class="fa-solid fa-bezier-curve icon-1"></i>
+                            </div>
+                            <h3>Interface Design</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+                                    <path
+                                        d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z">
+                                    </path>
+                                </svg>
+                                <i class="fa-solid fa-bezier-curve icon-1"></i>
+                            </div>
+                            <h3>Interface Design</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+                                    <path
+                                        d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z">
+                                    </path>
+                                </svg>
+                                <i class="fa-solid fa-bezier-curve icon-1"></i>
+                            </div>
+                            <h3>Interface Design</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="service-layout">
+                            <div class="icon-box">
+                                <svg class="icon-bg-shape icon-bg-1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+                                    <path
+                                        d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z">
+                                    </path>
+                                </svg>
+                                <i class="fa-solid fa-bezier-curve icon-1"></i>
+                            </div>
+                            <h3>Interface Design</h3>
+                            <p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+                            <a class="btn-text" href="https://www.radiustheme.com/demo/html/digeco/digeco/service-details.html">Discover Now <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services end-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
