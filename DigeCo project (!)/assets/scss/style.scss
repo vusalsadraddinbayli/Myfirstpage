@@ -10,6 +10,12 @@ section {
     header {
 
         text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: $purplecolor;
 
         .container {
             .navbar-part {
@@ -276,6 +282,56 @@ section {
                         fill: $icon-color-1 !important;
                     }
 
+                    &:hover .icon-2 {
+                        @include transition;
+                        color: $whitecolor !important;
+                    }
+
+                    &:hover .path-2 {
+                        @include transition;
+                        fill: $icon-color-2 !important;
+                    }
+
+                    &:hover .icon-3 {
+                        @include transition;
+                        color: $whitecolor !important;
+                    }
+
+                    &:hover .path-3 {
+                        @include transition;
+                        fill: $btn-color !important;
+                    }
+
+                    &:hover .icon-4 {
+                        @include transition;
+                        color: $whitecolor !important;
+                    }
+
+                    &:hover .path-4 {
+                        @include transition;
+                        fill: $icon-color-4 !important;
+                    }
+
+                    &:hover .icon-5 {
+                        @include transition;
+                        color: $whitecolor !important;
+                    }
+
+                    &:hover .path-5 {
+                        @include transition;
+                        fill: $icon-color-5 !important;
+                    }
+
+                    &:hover .icon-6 {
+                        @include transition;
+                        color: $whitecolor !important;
+                    }
+
+                    &:hover .path-6 {
+                        @include transition;
+                        fill: $icon-color-6 !important;
+                    }
+
                     .service-layout {
                         text-align: center;
 
@@ -303,8 +359,6 @@ section {
                             }
 
                             .icon-bg-2 {
-                                @include absolute;
-                                fill: $iconbg;
                                 .path-2 {
                                     @include absolute;
                                     fill: $iconbg;
@@ -316,7 +370,67 @@ section {
                                 top: 35%;
                                 left: 45%;
                                 font-size: 30px;
-                                color: $icon-color-1;
+                                color: $icon-color-2;
+                            }
+
+                            .icon-bg-3 {
+                                .path-3 {
+                                    @include absolute;
+                                    fill: $iconbg;
+                                }
+                            }
+
+                            .icon-3 {
+                                @include absolute;
+                                top: 35%;
+                                left: 45%;
+                                font-size: 30px;
+                                color: $btn-color;
+                            }
+
+                            .icon-bg-4 {
+                                .path-4 {
+                                    @include absolute;
+                                    fill: $iconbg;
+                                }
+                            }
+
+                            .icon-4 {
+                                @include absolute;
+                                top: 35%;
+                                left: 45%;
+                                font-size: 30px;
+                                color: $icon-color-4;
+                            }
+
+                            .icon-bg-5 {
+                                .path-5 {
+                                    @include absolute;
+                                    fill: $iconbg;
+                                }
+                            }
+
+                            .icon-5 {
+                                @include absolute;
+                                top: 35%;
+                                left: 45%;
+                                font-size: 30px;
+                                color: $icon-color-5;
+                            }
+
+                            .icon-bg-6 {
+                                .path-6 {
+                                    @include absolute;
+                                    fill: $iconbg;
+                                }
+                            }
+
+                            .icon-6 {
+                                @include absolute;
+                                top: 35%;
+                                left: 45%;
+                                font-size: 30px;
+                                color: $icon-color-6;
                             }
 
                         }
@@ -345,3 +459,38 @@ section {
 }
 
 /*services end*/
+/*footer start*/
+footer {
+    background-color: $purplecolor;
+    .footer-top-layout1 {
+        .container {
+            .row {
+
+                .footer-widgets {
+                    .footer-widget-heading{
+                        color: $whitecolor !important;
+                    }
+                    .footer-social {
+                        li {
+                            a {
+                                padding: 5px 10px 5px 0;
+                                color: $blackcolor;
+                            }
+                        }
+                    }
+                    .footer-menu{
+                        li{
+                            a{
+                                color: rgb(236, 235, 235);
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/*footer end*/

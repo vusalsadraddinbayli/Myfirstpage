@@ -1,0 +1,92 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_reset.scss';
+@import '_responsive.scss';
+section {
+    background-color: $purplecolor;
+
+    header {
+
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: $purplecolor;
+
+        .container {
+            .navbar-part {
+                ul {
+                    list-style: none;
+
+                    .nav-item {
+                        .nav-link {
+                            text-decoration: none;
+                            color: $whitecolor;
+                            font-weight: 600;
+                        }
+
+                        .dropdown {
+                            button {
+                                color: $whitecolor;
+                                font-weight: 600;
+                                outline: none;
+                            }
+
+                            .dropdown-toggle {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+        .search-box {
+            i {
+                color: $whitecolor;
+                font-size: 25px;
+            }
+
+            .search-border {
+
+
+                .search-item {
+                    border: 1px solid $whitecolor;
+                    border-radius: 5%;
+                    padding: 13px 15px;
+                    text-decoration: none;
+                    color: $whitecolor;
+                    border-color: $whitecolor;
+                    font-weight: 600;
+                    @include transition;
+
+                    &:hover {
+                        background-color: $whitecolor;
+                        color: $blackcolor;
+                    }
+                }
+            }
+        }
+
+    }
+    .home{
+        .container{
+            .service-home{
+                ul{
+                    text-decoration: none;
+                    li{
+
+                    }
+                }
+            }
+        }
+    }
+}
