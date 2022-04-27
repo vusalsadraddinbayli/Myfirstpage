@@ -26,6 +26,20 @@ a {
   .service-paragraph {
     width: 70%;
   }
+  .w-100-ressponsive {
+    width: 100% !important;
+  }
+  .display-flex-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -442,12 +456,8 @@ section header .search-box .search-border .search-item:hover {
 
 /*services end*/
 /*footer start*/
-footer {
-  background-color: #6610f2;
-}
-
-footer .footer-top-layout1 .container .row .footer-widgets .footer-widget-heading {
-  color: white !important;
+footer .footer-top-layout1 {
+  background-image: url("/assets/image/element3.png");
 }
 
 footer .footer-top-layout1 .container .row .footer-widgets .footer-social li a {

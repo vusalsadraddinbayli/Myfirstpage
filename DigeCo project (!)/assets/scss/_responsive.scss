@@ -2,14 +2,23 @@
     .navbar-part {
         display: none;
     }
-    .responsive-order{
-        order:-2;
+    .responsive-order {
+        order: -2;
     }
-    .service-paragraph{
+    .service-paragraph {
         width: 70%;
     }
+    .w-100-ressponsive {
+        width: 100% !important;
+    }
+    .display-flex-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-@media only screen and (min-width: 1240px){
+
+@media only screen and (min-width: 1240px) {
     .container {
         max-width: 1200px;
     }
