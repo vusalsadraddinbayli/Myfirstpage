@@ -522,6 +522,7 @@ section header .search-box .search-border .search-item:hover {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 20px !important;
 }
 
 .contact-wrap-layout1 .container .row .contact-box-layout1 .contact-form-box .grid-system input {
