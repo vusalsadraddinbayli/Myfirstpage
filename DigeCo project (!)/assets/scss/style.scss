@@ -7,6 +7,7 @@
 
 section {
     background-color: $purplecolor;
+
     header {
         text-align: center;
         position: fixed;
@@ -15,22 +16,26 @@ section {
         right: 0;
         z-index: 2;
         background-color: $purplecolor;
+
         .container {
             .navbar-part {
                 ul {
                     list-style: none;
+
                     .nav-item {
                         .nav-link {
                             text-decoration: none;
                             color: $whitecolor;
                             font-weight: 600;
                         }
+
                         .dropdown {
                             button {
                                 color: $whitecolor;
                                 font-weight: 600;
                                 outline: none;
                             }
+
                             .dropdown-toggle {
                                 &::after {
                                     display: none;
@@ -41,11 +46,13 @@ section {
                 }
             }
         }
+
         .search-box {
             i {
                 color: $whitecolor;
                 font-size: 25px;
             }
+
             .search-border {
                 .search-item {
                     border: 1px solid $whitecolor;
@@ -56,6 +63,7 @@ section {
                     border-color: $whitecolor;
                     font-weight: 600;
                     @include transition;
+
                     &:hover {
                         background-color: $whitecolor;
                         color: $blackcolor;
@@ -71,6 +79,7 @@ section {
         .row {
             .col-xl-5 {
                 margin-top: 100px;
+
                 .home-box {
                     h3 {
                         color: $whitecolor;
@@ -78,12 +87,14 @@ section {
                         font-size: 20px;
                         letter-spacing: 4px;
                     }
+
                     h1 {
                         font-size: 50px;
                         color: $whitecolor;
                         font-weight: 600;
                         line-height: 65px;
                     }
+
                     p {
                         color: $whitecolor;
                         width: 80%;
@@ -91,9 +102,11 @@ section {
                         font-size: 18px;
                     }
                 }
+
                 .home-button-box {
                     margin-bottom: 15px;
                     margin-right: 30px;
+
                     button {
                         padding: 10px 29px;
                         border-radius: 5%;
@@ -102,27 +115,32 @@ section {
                         background-color: transparent;
                         font-weight: 500;
                         @include transition;
+
                         &:hover {
                             color: $blackcolor;
                             background-color: $whitecolor;
                         }
                     }
+
                     i {
                         font-size: 40px;
                         margin-left: 30px;
                         color: $whitecolor;
                         @include transition;
+
                         &:hover {
                             color: $darkpurple;
                         }
                     }
                 }
+
                 h5 {
                     display: flex;
                     align-items: center;
                     margin-left: 10px;
                     color: $whitecolor;
                 }
+
                 .home-link {
                     &:hover {
                         color: $darkpurple;
@@ -141,18 +159,22 @@ section {
 
 .agency {
     background-color: $whitecolor;
+
     .container {
         .row {
             .col-lg-6 {
                 .agency-image-box {
                     width: 90%;
+
                     img {
                         width: 100%;
                         height: auto;
                     }
                 }
+
                 .agency-box {
                     padding-left: 0;
+
                     .list-box {
                         .list-item {
                             li {
@@ -162,8 +184,10 @@ section {
                             }
                         }
                     }
+
                     .agency-button-box {
                         margin-top: 70px;
+
                         button {
                             margin-top: 20px;
                             padding: 13px 30px;
@@ -173,11 +197,13 @@ section {
                             border-color: $whitecolor;
                             border: none;
                             @include transition;
+
                             &:hover {
                                 background-color: $whitecolor;
                                 color: $purplecolor;
                                 border: 1px solid $purplecolor;
                             }
+
                             &:hover i {
                                 @include transition;
                                 @include translate;
@@ -199,16 +225,50 @@ section {
 .services {
     background-color: $whitecolor;
     margin-top: 80px;
+
     .container {
+        span.loginwith {
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            white-space: nowrap;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 10%;
+                height: 1px;
+                background: $greycolor;
+                vertical-align: middle;
+                margin-right: 3%;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 10%;
+                height: 1px;
+                background: $greycolor;
+                vertical-align: middle;
+                margin-left: 3%;
+            }
+        }
+
         .services-text-box {
             h2 {
                 font-weight: 700;
             }
+
             i {
                 font-size: 30px;
                 color: $purplecolor;
                 margin-top: 10px;
             }
+
             p {
                 margin-top: 100px;
                 width: 50%;
@@ -218,78 +278,97 @@ section {
                 margin-top: 15px;
             }
         }
+
         .row {
             height: auto;
+
             .col-xl-4 {
                 .card {
                     border: none;
                     background-color: #e9e9e9;
                     @include padding;
                     @include transition;
+
                     &:hover {
                         box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.33);
                     }
+
                     &:hover .icon-1 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-1 {
                         @include transition;
                         fill: $icon-color-1 !important;
                     }
+
                     &:hover .icon-2 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-2 {
                         @include transition;
                         fill: $icon-color-2 !important;
                     }
+
                     &:hover .icon-3 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-3 {
                         @include transition;
                         fill: $btn-color !important;
                     }
+
                     &:hover .icon-4 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-4 {
                         @include transition;
                         fill: $icon-color-4 !important;
                     }
+
                     &:hover .icon-5 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-5 {
                         @include transition;
                         fill: $icon-color-5 !important;
                     }
+
                     &:hover .icon-6 {
                         @include transition;
                         color: $whitecolor !important;
                     }
+
                     &:hover .path-6 {
                         @include transition;
                         fill: $icon-color-6 !important;
                     }
+
                     .service-layout {
                         text-align: center;
+
                         .icon-box {
                             @include relative;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
                             .icon-bg-1 {
                                 .path-1 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-1 {
                                 @include absolute;
                                 top: 35%;
@@ -297,12 +376,14 @@ section {
                                 font-size: 30px;
                                 color: $icon-color-1;
                             }
+
                             .icon-bg-2 {
                                 .path-2 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-2 {
                                 @include absolute;
                                 top: 35%;
@@ -310,12 +391,14 @@ section {
                                 font-size: 30px;
                                 color: $icon-color-2;
                             }
+
                             .icon-bg-3 {
                                 .path-3 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-3 {
                                 @include absolute;
                                 top: 35%;
@@ -323,12 +406,14 @@ section {
                                 font-size: 30px;
                                 color: $btn-color;
                             }
+
                             .icon-bg-4 {
                                 .path-4 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-4 {
                                 @include absolute;
                                 top: 35%;
@@ -336,12 +421,14 @@ section {
                                 font-size: 30px;
                                 color: $icon-color-4;
                             }
+
                             .icon-bg-5 {
                                 .path-5 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-5 {
                                 @include absolute;
                                 top: 35%;
@@ -349,12 +436,14 @@ section {
                                 font-size: 30px;
                                 color: $icon-color-5;
                             }
+
                             .icon-bg-6 {
                                 .path-6 {
                                     @include absolute;
                                     fill: $iconbg;
                                 }
                             }
+
                             .icon-6 {
                                 @include absolute;
                                 top: 35%;
@@ -363,12 +452,15 @@ section {
                                 color: $icon-color-6;
                             }
                         }
+
                         h3 {
                             margin-top: 10px;
                         }
+
                         p {
                             margin-top: 10px;
                         }
+
                         .btn-text {
                             font-weight: 500;
                             font-size: 16px;
@@ -389,16 +481,19 @@ section {
 
 .plan {
     background-color: $whitecolor;
+
     .container {
         .row {
             .feature-box-layout1 {
                 .plan-image-box {
                     width: 90%;
+
                     img {
                         width: 100%;
                         height: auto;
                     }
                 }
+
                 .plan-box {
                     .item-title {
                         font-weight: 600;
@@ -407,6 +502,7 @@ section {
                         margin: 0 0 20px 0;
                         line-height: 36px;
                     }
+
                     .paragraph-title {
                         font-weight: 500;
                         font-size: 18px;
@@ -415,8 +511,10 @@ section {
                         margin-bottom: 20px;
                         color: $greycolor;
                     }
+
                     .plan-button-box {
                         margin-top: 70px;
+
                         button {
                             margin-top: 20px;
                             padding: 13px 30px;
@@ -426,11 +524,13 @@ section {
                             border-color: $whitecolor;
                             border: none;
                             @include transition;
+
                             &:hover {
                                 background-color: $whitecolor;
                                 color: $purplecolor;
                                 border: 1px solid $purplecolor;
                             }
+
                             &:hover i {
                                 @include transition;
                                 @include translate;
@@ -451,6 +551,7 @@ section {
 
 .contact-wrap-layout1 {
     background-color: $whitecolor;
+
     .container {
         .row {
             .contact-box-layout1 {
@@ -458,21 +559,25 @@ section {
                     font-weight: 600;
                     margin-bottom: 5px;
                 }
+
                 .contact-form-box {
                     .h-200 {
                         height: 200px !important;
                         resize: none;
                         overflow-y: auto;
                     }
+
                     .grid-system {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 10px !important;
+
                         input {
                             width: 100%;
                         }
                     }
                 }
+
                 .input-button-box {
                     button {
                         border: 0;
@@ -484,6 +589,7 @@ section {
                         border: none;
                         border-radius: 5px;
                         @include transition;
+
                         &:hover {
                             background-color: $whitecolor;
                             color: $purplecolor;
@@ -492,9 +598,11 @@ section {
                         }
                     }
                 }
+
                 .item-figure {
                     width: 70%;
                     margin-left: 20px;
+
                     img {
                         width: 100%;
                         height: auto;
@@ -514,34 +622,41 @@ section {
 footer {
     .footer-top-layout1 {
         background-color: $purplecolor;
+
         .container-fluid {
             .row {
                 .footer-widgets {
                     .paragraph {
                         color: $whitecolor;
                     }
+
                     .footer-widget-heading {
                         color: $whitecolor !important;
                     }
+
                     p {
                         color: $whitecolor;
                         margin-top: 15px;
                     }
+
                     .footer-contact {
                         li {
                             color: $whitecolor;
                             font-size: 15px;
                             margin-top: 15px;
+
                             a {
                                 i {
                                     color: $whitecolor;
                                 }
+
                                 .info {
                                     color: $whitecolor;
                                 }
                             }
                         }
                     }
+
                     .footer-social {
                         li {
                             a {
@@ -550,9 +665,11 @@ footer {
                             }
                         }
                     }
+
                     .footer-menu {
                         li {
                             margin-top: 15px;
+
                             a {
                                 color: rgb(236, 235, 235);
                             }
@@ -575,14 +692,17 @@ footer {
         .service-home {
             padding-top: 70px;
             padding-bottom: 70px;
+
             h1 {
                 color: $whitecolor;
             }
+
             ul {
                 li {
                     a {
                         color: $whitecolor;
                         font-size: 20px;
+
                         .icon {
                             color: $whitecolor;
                             margin-right: 5px;
@@ -604,25 +724,31 @@ footer {
     padding-top: 120px;
     padding-bottom: 90px;
     background-color: $whitecolor;
+
     .container {
         .row {
             .digital-image-box {
                 width: 70%;
+
                 img {
                     height: auto;
                     width: 100%;
                 }
             }
+
             .content-holeder {
                 .item-title {
                     font-weight: 700;
                     margin-bottom: 30px;
                 }
+
                 p {
                     margin-bottom: 50px;
                 }
+
                 .digital-button-box {
                     margin-top: 70px;
+
                     button {
                         margin-top: 20px;
                         padding: 13px 30px;
@@ -632,11 +758,13 @@ footer {
                         border-color: $whitecolor;
                         border: none;
                         @include transition;
+
                         &:hover {
                             background-color: $whitecolor;
                             color: $purplecolor;
                             border: 1px solid $purplecolor;
                         }
+
                         &:hover i {
                             @include transition;
                             @include translate;
@@ -650,3 +778,276 @@ footer {
 
 
 /*digital end*/
+/*mainpart start*/
+.mainpart {
+    background-color: $whitecolor;
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    .container {
+        width: 100%;
+        @include margin-padding;
+
+        .row {
+            .card {
+                border: none;
+
+                .main-box-layout2 {
+                    margin-top: 30px;
+
+                    .item-figure {
+                        border-radius: 4px;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .item-content {
+                        ul {
+                            li {
+                                a {
+                                    color: $greycolor;
+                                }
+                            }
+                        }
+
+                        .entry-title {
+                            font-weight: 600;
+                            line-height: 32px;
+                            margin-bottom: 10px;
+                        }
+
+                        .btn-text {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: $btn-color;
+
+                            .icon-span {
+                                color: $btn-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .number-layout1 {
+                margin-bottom: 20px;
+                margin-top: 30px;
+
+                li {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+
+                    a {
+                        border: 1px solid $greycolor;
+                        height: 45px !important;
+                        width: 45px !important;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        @include transition;
+
+                        &:hover {
+                            background-color: $purplecolor;
+                            color: $whitecolor;
+                        }
+
+                        &:hover i {
+                            color: $whitecolor;
+                        }
+
+                        i {
+                            color: $greycolor;
+
+                        }
+                    }
+                }
+
+                .active {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+
+                    .text-active {
+                        color: $whitecolor;
+                        background-color: $purplecolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*mainpart end*/
+/*brand start*/
+.brand {
+    background-color: $whitecolor;
+
+    .container {
+        width: 100%;
+        @include margin-padding;
+
+        .brand-box {
+            .brand-image {
+
+                img {}
+            }
+        }
+    }
+}
+
+/*brand end*/
+/*contact-input start*/
+.contact-wrap-layout3 {
+    background-color: $whitecolor;
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    .container {
+        @include margin-padding;
+
+        .row {
+            .address-box-layout2 {
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $greycolor;
+
+                .item-icon {
+                    color: $purplecolor;
+                    margin-right: 20px;
+                    margin-top: 5px;
+
+                    i {
+                        font-size: 36px;
+                    }
+
+                }
+            }
+
+            .contact-box-layout3 {
+                .contact-form-box {
+                    .h-200 {
+                        height: 250px !important;
+                        resize: none;
+                        overflow-y: auto;
+                    }
+
+                    .grid-system {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 10px !important;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .contact-button-box {
+                    display: flex;
+                    justify-content: end;
+
+                    button {
+                        border: 0;
+                        padding: 12px 28px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $whitecolor;
+                        background-color: $purplecolor;
+                        border: none;
+                        border-radius: 5px;
+                        @include transition;
+
+                        &:hover {
+                            background-color: $whitecolor;
+                            color: $purplecolor;
+                            border: 1px solid $purplecolor;
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*contact-input end*/
+/*platform start*/
+.platform {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-color: $whitecolor;
+
+    .container {
+        @include margin-padding;
+
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .platform-details-box {
+                line-height: 30px;
+
+                .item-figure {
+                    margin-bottom: 50px;
+
+                    img {
+                        border-radius: 4px;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .item-content {
+                    .item-title {
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                        font-size: 36px;
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .widget-info {
+                line-height: 30px;
+
+                .item-figure {
+                    margin-bottom: 50px;
+
+                    img {
+                        border-radius: 4px;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .item-content {
+                    .item-heading {
+                        font-weight: 700;
+                    }
+
+                    .list-item {
+                        li {
+                            margin-bottom: 5px;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: #111111;
+
+                            span {
+                                margin-left: 15px;
+                                color: #646464;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*platform end*/
