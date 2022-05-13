@@ -98,6 +98,7 @@ var myRpeat = "hello my friend"
 var tekrarla = myRpeat.repeat(2)
 console.log(tekrarla)
 
+\4
 
 var replace = "My car is blue"
 var myReplace = replace.replace("blue", "red")
