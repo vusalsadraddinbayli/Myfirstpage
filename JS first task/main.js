@@ -51,3 +51,64 @@ var arrayRandom = [1, 2, 4, 16, 18, 22, "vusal", "rahide", true, false]
 var randomValue = arrayRandom[Math.ceil(arrayRandom.length * Math.random())]
 
 console.log(randomValue)
+// task 3
+let arraycolor = ["red", "green", "yellow", "pink"]
+console.log(arraycolor)
+if (arraycolor= "black"){
+    console.log("duzgun deyil")
+}
+else{
+    console.log("duzgundur")
+}
+
+var x = (a, b, c) => a*b*c
+console.log(x(4, 2, 5))
+
+let arraymethods = ["bir", "iki", "uc"]
+console.log(arraymethods)
+var pushmethod = arraymethods.push("dord")
+console.log(pushmethod)
+var popmethod = arraymethods.pop()
+console.log(popmethod)
+var shiftmethod = arraymethods.shift()
+console.log(shiftmethod)
+var unshiftmethod = arraymethods.unshift("sifir")
+console.log(unshiftmethod)
+var sortmethod = arraymethods.sort()
+console.log(sortmethod)
+
+
+let arraynumber = [25, 36, 17, 3, 11, 52, 29, 5]
+console.log(arraynumber)
+let filtermethod = arraynumber.filter(e=>e>20)
+console.log(filtermethod)
+
+// task 4
+let numbers = [4, 5, 6, 7, 8];
+for (i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+  } 
+
+var a= ["grey", "white", "black"];
+for (var element of a) {
+    console.log(element);
+}
+
+/*task 5*/
+const deleteddocument = document.querySelector('.mylist')
+deleteddocument.addEventListener('click', function(e) {
+    if (e.target.className === 'fa-solid fa-xmark') {
+        e.target.parentElement.remove();
+        e.preventDefault();
+    }
+}
+)
+document.getElementById("click").style.backgroundColor = "red";
+
+const changecolor = document.querySelector('.li')
+changecolor.addEventListener('click', function(e){
+    if(e.target.className=== 'li'){
+        e.style.backgroundColor = 'green'
+    }
+    
+})
