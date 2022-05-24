@@ -301,3 +301,23 @@ document.getElementById("vusal").style.backgroundColor = 'red';
 
 
 document.querySelectorAll("#credit").forEach(e => e.click())
+
+/*sira ile emeliyyatlar; yerine yetirmek ucun*/
+const first = () => {
+    setTimeout(() => {
+        console.log('first')
+    }, 1000);
+    second();
+};
+const second = () => {
+    setTimeout(() => {
+        console.log('second')
+    }, 2000);
+    third();
+};
+const third = () => {
+    setTimeout(() => {
+        console.log('third')
+    }, 3000);
+};
+first();

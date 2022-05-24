@@ -112,3 +112,43 @@ changecolor.addEventListener('click', function(e){
     }
     
 })
+
+let employeeName = [
+    { "name": "Akif", "email": "Akif@gmail.com", "age": "20" },
+    { "name": "Senan", "email": "Senan@gmail.com", "age": "25" },
+    { "name": "Rahide", "email": "Senan@gmail.com", "age": "27" },
+    { "name": "Arzu", "email": "Arzu@gmail.com", "age": "22" },
+    { "name": "Hemid", "email": "Hemid@gmail.com", "age": "23" }
+];
+console.log(employeeName)
+let filtertask = employeeName.filter(e=>e.age>25)
+console.log(filtertask)
+let maptask = employeeName.map(e=>e.email)
+console.log(maptask)
+
+let employeeName1 = [
+    { "name": "Akif", "email": "Akif@gmail.com", "age": "20",
+    'olkeler':{'olke1':"az","olke2":"turk"}
+    },
+    { "name": "Senan", "email": "Senan@gmail.com", "age": "25" },
+    { "name": "Rahide", "email": "Senan@gmail.com", "age": "27" },
+    { "name": "Arzu", "email": "Arzu@gmail.com", "age": "22" },
+    { "name": "Hemid", "email": "Hemid@gmail.com", "age": "23" }
+];
+let maptask2 = employeeName1.map(e=>e.olkeler)
+console.log(maptask2)
+
+/*task6*/
+var ShoppingItems = {
+    phone: 400,
+    notebook: 600,
+    charger: 200,
+    nameofModel: "Lenova"
+};
+var sum = 0;
+for (var price of Object.values(ShoppingItems)){
+    if(Number.isFinite(price))(
+        sum -= price
+    )
+}
+console.log(sum)
