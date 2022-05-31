@@ -54,14 +54,14 @@ console.log(randomValue)
 // task 3
 let arraycolor = ["red", "green", "yellow", "pink"]
 console.log(arraycolor)
-if (arraycolor= "black"){
+if (arraycolor = "black") {
     console.log("duzgun deyil")
 }
-else{
+else {
     console.log("duzgundur")
 }
 
-var x = (a, b, c) => a*b*c
+var x = (a, b, c) => a * b * c
 console.log(x(4, 2, 5))
 
 let arraymethods = ["bir", "iki", "uc"]
@@ -80,23 +80,23 @@ console.log(sortmethod)
 
 let arraynumber = [25, 36, 17, 3, 11, 52, 29, 5]
 console.log(arraynumber)
-let filtermethod = arraynumber.filter(e=>e>20)
+let filtermethod = arraynumber.filter(e => e > 20)
 console.log(filtermethod)
 
 // task 4
 let numbers = [4, 5, 6, 7, 8];
 for (i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
-  } 
+}
 
-var a= ["grey", "white", "black"];
+var a = ["grey", "white", "black"];
 for (var element of a) {
     console.log(element);
 }
 
 /*task 5*/
 const deleteddocument = document.querySelector('.mylist')
-deleteddocument.addEventListener('click', function(e) {
+deleteddocument.addEventListener('click', function (e) {
     if (e.target.className === 'fa-solid fa-xmark') {
         e.target.parentElement.remove();
         e.preventDefault();
@@ -106,11 +106,11 @@ deleteddocument.addEventListener('click', function(e) {
 document.getElementById("click").style.backgroundColor = "red";
 
 const changecolor = document.querySelector('.li')
-changecolor.addEventListener('click', function(e){
-    if(e.target.className=== 'li'){
+changecolor.addEventListener('click', function (e) {
+    if (e.target.className === 'li') {
         e.style.backgroundColor = 'green'
     }
-    
+
 })
 
 let employeeName = [
@@ -121,21 +121,22 @@ let employeeName = [
     { "name": "Hemid", "email": "Hemid@gmail.com", "age": "23" }
 ];
 console.log(employeeName)
-let filtertask = employeeName.filter(e=>e.age>25)
+let filtertask = employeeName.filter(e => e.age > 25)
 console.log(filtertask)
-let maptask = employeeName.map(e=>e.email)
+let maptask = employeeName.map(e => e.email)
 console.log(maptask)
 
 let employeeName1 = [
-    { "name": "Akif", "email": "Akif@gmail.com", "age": "20",
-    'olkeler':{'olke1':"az","olke2":"turk"}
+    {
+        "name": "Akif", "email": "Akif@gmail.com", "age": "20",
+        'olkeler': { 'olke1': "az", "olke2": "turk" }
     },
     { "name": "Senan", "email": "Senan@gmail.com", "age": "25" },
     { "name": "Rahide", "email": "Senan@gmail.com", "age": "27" },
     { "name": "Arzu", "email": "Arzu@gmail.com", "age": "22" },
     { "name": "Hemid", "email": "Hemid@gmail.com", "age": "23" }
 ];
-let maptask2 = employeeName1.map(e=>e.olkeler)
+let maptask2 = employeeName1.map(e => e.olkeler)
 console.log(maptask2)
 
 /*task6*/
@@ -146,9 +147,21 @@ var ShoppingItems = {
     nameofModel: "Lenova"
 };
 var sum = 0;
-for (var price of Object.values(ShoppingItems)){
-    if(Number.isFinite(price))(
-        sum -= price
+for (var price of Object.values(ShoppingItems)) {
+    if (Number.isFinite(price)) (
+        sum += price
     )
 }
 console.log(sum)
+
+
+function paragraph() {
+    document.getElementById('p1').style.fontSize = "40px"
+    document.getElementById('p1').style.color = 'red'
+}
+
+/*task7*/
+function myinputfunction() {
+    var inputvalue = document.getElementById('myinput')
+    document.getElementById('inputp').innerHTML = `input deyeri: ${inputvalue.value}`
+}
