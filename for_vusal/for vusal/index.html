@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .openMenu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ccc;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 5px;
+        }
+        
+        .closebtn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="openMenu" class="openMenu">
+        <p>salam</p>
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+    </div>
+    <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("openMenu").style.width = "20%"
+        }
+
+        function closeNav() {
+            document.getElementById("openMenu").style.width = "0"
+        }
+    </script>
+</body>
+
+</html>
