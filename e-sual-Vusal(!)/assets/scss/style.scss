@@ -1,0 +1,224 @@
+@import "_variable.scss";
+@import "_reset.scss";
+@import "_mixin.scss";
+@import "_responsive.scss";
+
+.gap-5 {
+    gap: 10px;
+}
+// .d-none{
+//     display: none !important;
+// }
+// .d-block{
+//     display: block !important;
+// }
+
+section {
+    header {
+
+        border-bottom: 1px solid $grey;
+
+        .container {
+            .nav {
+                padding-left: 100px !important;
+
+                .serach-box {
+                    position: relative;
+
+                    input {
+                        background-color: $border-bg-color;
+                        border: none;
+                        width: 100%;
+                        padding: 5px 3px 5px 30px !important;
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 25px;
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.openMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+
+    .closebtn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.second-part {
+    border-bottom: 1px solid $grey;
+    // .comments-toggle-boxes {
+    //     form {
+
+    //     }
+    // }
+}
+
+.home {
+    .container {
+        .row {
+            .home-search {
+                background-color: $border-bg-color;
+                border-radius: 15px;
+
+                form {
+                    padding-top: 20px;
+
+                    input {
+                        background-color: $white;
+                        border: none;
+                        width: 100%;
+                        padding: 2px 0px 3px 10px !important;
+                        border-radius: 50px;
+                    }
+                }
+
+                ul {
+                    padding-top: 20px;
+                    padding-left: 0 !important;
+
+                    li {
+                        margin-top: 10px;
+
+                        a {
+                            color: $black;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 30px;
+                            padding-right: 10px;
+                        }
+
+                        p {
+                            color: $dark-grey;
+                        }
+                    }
+                }
+            }
+
+            .home-contents {
+                padding-left: 40px;
+
+                .second-part {
+                    width: 95%;
+                    height: auto;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 63px;
+
+                    }
+
+                    .profile {
+                        .text-box {
+                            h6 {
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+
+                            p {
+                                color: $dark-grey;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    p {
+                        line-height: 28px;
+                        text-align: justify;
+                    }
+
+                    .button-boxes {
+                        .arrow-up {
+                            a {
+                                i {
+                                    text-align: center;
+                                    padding: 8px 10px 8px 10px;
+                                    background-color: $green;
+                                    color: $white;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            p {
+                                padding-left: 5px;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .arrow-down {
+                            a {
+                                i {
+                                    text-align: center;
+                                    padding: 8px 10px 8px 10px;
+                                    background-color: $orange;
+                                    color: $white;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            p {
+                                padding-left: 5px;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .button-comment {
+                            a {
+                                color: $white !important;
+                                background-color: $blue;
+                                border: none;
+                                padding: 5px 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .favorite-box{
+                            a{
+                                color: $white !important;
+                                background-color: $violet;
+                                border: none;
+                                padding: 5px 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .share-box{
+                            a{
+                                color: $white !important;
+                                background-color: $blue;
+                                border: none;
+                                padding: 5px 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .notifocation-box{
+                            a{
+                                color: $white !important;
+                                background-color: $dark-blue;
+                                border: none;
+                                padding: 5px 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

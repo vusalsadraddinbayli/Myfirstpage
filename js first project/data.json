@@ -1,0 +1,104 @@
+
+
+[
+    {
+        "employees": [{
+                "fullname": "Kate Reid",
+                "age": "20 years",
+                "position": "Intern",
+                "salary": "100$"
+            },
+            {
+                "fullname": "Philip Nixon",
+                "age": "36 years",
+                "position": "Financial Director",
+                "salary": "4500$"
+            },
+            {
+                "fullname": "Marcus Montoya",
+                "age": "28 years",
+                "position": "Marketing Manager",
+                "salary": "3000$"
+            },
+            {
+                "fullname": "Joy Cole",
+                "age": "29 years",
+                "position": "Product Manager",
+                "salary": "2200$"
+            }
+        ]
+    },
+    {
+        "products": [{
+                "name": "Fruit Stands",
+                "average price": "128$",
+                "liked": "89%"
+            },
+            {
+                "name": "Fish Stands",
+                "average price": "418$",
+                "liked": "87%"
+            },
+            {
+                "name": "Junk Foods",
+                "average price": "632$",
+                "liked": "95%"
+            },
+            {
+                "name": "Drinks",
+                "average price": "555$",
+                "liked": "93%"
+            }
+        ]
+    },
+    {
+        "brand phones": [{
+                "name": "iPhone 13 Pro Max",
+                "price": "900$",
+                "prefered": "70%"
+            },
+            {
+                "name": "Samsung Galaxy S22 Plus",
+                "price": "825$$",
+                "prefered": "80%"
+            },
+            {
+                "name": "Lenovo Legion Pro",
+                "price": "500$",
+                "prefered": "55%"
+            },
+            {
+                "name": "Huawei P50",
+                "price": "1000$",
+                "prefered": "90%"
+            }
+        ]
+    },
+    {
+        "countries": [{
+                "name": "Denmark",
+                "population": "5,831,413",
+                "percentage of males": "49.71%",
+                "percentage of females": "50.29%"
+            },
+            {
+                "name": "Mexico",
+                "population": "131,540,680",
+                "percentage of males": "48.92%",
+                "percentage of females": "51.08%"
+            },
+            {
+                "name": "China",
+                "population": "1,450,023,585",
+                "percentage of males": "51.29%",
+                "percentage of females": "48.71%"
+            },
+            {
+                "name": "Senegal",
+                "population": "16,743,927",
+                "percentage of males": "49.80%",
+                "percentage of females": "51.20%"
+            }
+        ]
+    }
+]
