@@ -6,6 +6,7 @@
 .gap-5 {
     gap: 10px;
 }
+
 // .d-none{
 //     display: none !important;
 // }
@@ -30,6 +31,7 @@ section {
                         border: none;
                         width: 100%;
                         padding: 5px 3px 5px 30px !important;
+                        border-radius: 50px;
                     }
 
                     i {
@@ -38,29 +40,47 @@ section {
                         left: 10px;
                     }
                 }
+
+                .openMenu {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: $openmenu-color;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 5px;
+
+                    .open-part {
+                        div {
+                            a {
+                                padding: 8px 8px 8px 32px;
+                                font-size: 35px;
+                                color: $black;
+                            }
+                        }
+                    }
+
+                    .closebtn {
+                        position: absolute;
+                        right: 25px;
+                        top: 12px;
+                        width: 50px;
+                        font-size: 30px;
+                        margin-left: 50px;
+                        border: 1px solid $black;
+                        background-color: $white;
+                        border-radius: 50%;
+                    }
+                }
             }
         }
     }
 }
 
-.openMenu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: $grey;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 5px;
 
-    .closebtn {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-}
 
 .second-part {
     border-bottom: 1px solid $grey;
@@ -182,34 +202,37 @@ section {
 
                         .button-comment {
                             a {
-                                color: $white !important;
+                                color: $white  !important;
                                 background-color: $blue;
                                 border: none;
                                 padding: 5px 15px;
                                 border-radius: 5px;
                             }
                         }
-                        .favorite-box{
-                            a{
-                                color: $white !important;
+
+                        .favorite-box {
+                            a {
+                                color: $white  !important;
                                 background-color: $violet;
                                 border: none;
                                 padding: 5px 15px;
                                 border-radius: 5px;
                             }
                         }
-                        .share-box{
-                            a{
-                                color: $white !important;
+
+                        .share-box {
+                            a {
+                                color: $white  !important;
                                 background-color: $blue;
                                 border: none;
                                 padding: 5px 15px;
                                 border-radius: 5px;
                             }
                         }
-                        .notifocation-box{
-                            a{
-                                color: $white !important;
+
+                        .notifocation-box {
+                            a {
+                                color: $white  !important;
                                 background-color: $dark-blue;
                                 border: none;
                                 padding: 5px 15px;
@@ -218,6 +241,33 @@ section {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+.footer {
+    .container-fluid {
+        padding: 0 30px 0 30px;
+
+        .footer-div {
+            ul {
+                li {
+                    a {
+                        color: $dark-grey  !important;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            a {
+                color: $dark-grey  !important;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
             }
         }
     }

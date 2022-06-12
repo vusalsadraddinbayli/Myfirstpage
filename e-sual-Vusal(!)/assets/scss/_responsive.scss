@@ -1,0 +1,30 @@
+@media screen and (max-width:768px) {
+    section{
+        header{
+            .nav{
+                .openMenu{
+                    .open-part{
+                        div{
+                            a{
+                                font-size: 15px;
+                                color: $grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .button-boxes{
+        a{
+            span{
+                display: none !important;
+            }
+        }
+    }
+}
+    
+
+    
