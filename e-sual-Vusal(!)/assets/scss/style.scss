@@ -3,6 +3,10 @@
 @import "_mixin.scss";
 @import "_responsive.scss";
 
+.gap-4 {
+    gap: 7px;
+}
+
 .gap-5 {
     gap: 10px;
 }
@@ -17,62 +21,131 @@
 section {
     header {
 
-        border-bottom: 1px solid $grey;
+        border-bottom: 1px solid $border-bottom-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 2;
 
-        .container {
-            .nav {
-                padding-left: 100px !important;
+        .nav {
+            .navbar-part {
+                display: block;
+                ul {
+                    .nav-item {
+                        .nav-link {
+                            color: $black;
+                            @include transition;
 
-                .serach-box {
-                    position: relative;
-
-                    input {
-                        background-color: $border-bg-color;
-                        border: none;
-                        width: 100%;
-                        padding: 5px 3px 5px 30px !important;
-                        border-radius: 50px;
-                    }
-
-                    i {
-                        position: absolute;
-                        top: 25px;
-                        left: 10px;
-                    }
-                }
-
-                .openMenu {
-                    height: 100%;
-                    width: 0;
-                    position: fixed;
-                    z-index: 1;
-                    top: 0;
-                    left: 0;
-                    background-color: $openmenu-color;
-                    overflow-x: hidden;
-                    transition: 0.5s;
-                    padding-top: 5px;
-
-                    .open-part {
-                        div {
-                            a {
-                                padding: 8px 8px 8px 32px;
-                                font-size: 35px;
-                                color: $black;
+                            &:hover {
+                                border-bottom: 1px solid $blue;
+                                color: $blue  !important;
+                                transform: translateY(15.5px);
+                                -webkit-transform: translateY(15.5px);
+                                -moz-transform: translateY(15.5px);
+                                -ms-transform: translateY(15.5px);
+                                -o-transform: translateY(15.5px);
                             }
                         }
                     }
+                }
+            }
+            .register {
+                a {
+                    color: $black;
+                    font-weight: bold;
+                    @include transition;
+                    &:hover {
+                        color: $blue !important;
+                    }
+                }
+            }
+            span{
+                display: none;
+            }
 
-                    .closebtn {
-                        position: absolute;
-                        right: 25px;
-                        top: 12px;
-                        width: 50px;
-                        font-size: 30px;
-                        margin-left: 50px;
-                        border: 1px solid $black;
-                        background-color: $white;
-                        border-radius: 50%;
+            .serach-box {
+                position: relative;
+
+                input {
+                    background-color: $border-bg-color;
+                    border: none;
+                    width: 100%;
+                    padding: 5px 3px 5px 30px !important;
+                    border-radius: 50px;
+                }
+
+                i {
+                    position: absolute;
+                    top: 25px;
+                    left: 10px;
+                }
+            }
+
+            .openMenu {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: $white;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 5px;
+
+                .open-part {
+                    div {
+                        a {
+                            padding: 8px 8px 8px 32px;
+                            font-size: 27px;
+                            color: $black;
+                        }
+                    }
+                    .social-links-mobile{
+                        padding-top: 400px;
+                    }
+                    .mobile-footer {
+                        padding-top: 50px;
+                        a {
+                            color: $dark-grey !important;
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .closebtn {
+                    position: absolute;
+                    right: 25px;
+                    top: 12px;
+                    width: 50px;
+                    font-size: 30px;
+                    margin-left: 50px;
+                    border: 1px solid $black;
+                    background-color: $white;
+                    border-radius: 50%;
+                }
+                .mobile-button-box {
+                    padding: 10px 20px;
+                    border-bottom: 1px solid $dark-grey;
+                    text-align: center;
+                    a {
+                        background-color: $blue !important;
+                        color: $white !important;
+                        text-align: center;
+                        font-size: 25px;
+                        padding: 8px 8px 8px 32px;
+                        display: flex;
+                        justify-content: center;
+                        @include border-radius;
+                        i{
+                            margin-top: 4px;
+                        }
+                        span{
+                            margin-left: 15px;
+                        }
                     }
                 }
             }
@@ -92,154 +165,191 @@ section {
 }
 
 .home {
-    .container {
-        .row {
-            .home-search {
-                background-color: $border-bg-color;
-                border-radius: 15px;
+    margin-top: 130px;
 
-                form {
-                    padding-top: 20px;
+    .row {
+        .home-search {
+            background-color: $border-bg-color;
+            border-radius: 15px;
 
-                    input {
-                        background-color: $white;
-                        border: none;
-                        width: 100%;
-                        padding: 2px 0px 3px 10px !important;
-                        border-radius: 50px;
+            form {
+                padding-top: 20px;
+
+                input {
+                    background-color: $white;
+                    border: none;
+                    width: 100%;
+                    padding: 2px 0px 3px 10px !important;
+                    border-radius: 50px;
+                }
+            }
+
+            ul {
+                padding-top: 20px;
+                padding-left: 0 !important;
+
+                li {
+                    margin-top: 10px;
+
+                    a {
+                        color: $black;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 30px;
+                        padding-right: 10px;
+                    }
+
+                    p {
+                        color: $dark-grey;
                     }
                 }
+            }
+        }
 
-                ul {
-                    padding-top: 20px;
-                    padding-left: 0 !important;
+        .home-contents {
+            padding-left: 40px;
 
-                    li {
-                        margin-top: 10px;
+            .second-part {
+                width: 95%;
+                height: auto;
 
-                        a {
-                            color: $black;
-                            font-weight: 400;
-                            font-size: 15px;
-                            line-height: 30px;
-                            padding-right: 10px;
+                h1 {
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 63px;
+
+                }
+
+                .profile {
+                    .text-box {
+                        h6 {
+                            font-size: 13px;
+                            font-weight: bold;
                         }
 
                         p {
                             color: $dark-grey;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                p {
+                    line-height: 28px;
+                    text-align: justify;
+                }
+
+                .button-boxes {
+                    .arrow-up {
+                        a {
+                            i {
+                                text-align: center;
+                                padding: 8px 10px 8px 10px;
+                                background-color: $green;
+                                color: $white;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        p {
+                            padding-left: 5px;
+                            font-size: 13px;
+                        }
+                    }
+
+                    .arrow-down {
+                        a {
+                            i {
+                                text-align: center;
+                                padding: 8px 10px 8px 10px;
+                                background-color: $orange;
+                                color: $white;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        p {
+                            padding-left: 5px;
+                            font-size: 13px;
+                        }
+                    }
+
+                    .button-comment {
+                        a {
+                            color: $white  !important;
+                            background-color: $blue;
+                            border: none;
+                            padding: 5px 15px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .favorite-box {
+                        a {
+                            color: $white  !important;
+                            background-color: $violet;
+                            border: none;
+                            padding: 5px 15px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .share-box {
+                        a {
+                            color: $white  !important;
+                            background-color: $blue;
+                            border: none;
+                            padding: 5px 15px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .notifocation-box {
+                        a {
+                            color: $white  !important;
+                            background-color: $dark-blue;
+                            border: none;
+                            padding: 5px 15px;
+                            border-radius: 5px;
                         }
                     }
                 }
             }
 
-            .home-contents {
-                padding-left: 40px;
-
+            .discovery {
                 .second-part {
-                    width: 95%;
-                    height: auto;
-
-                    h1 {
-                        font-weight: 700;
-                        font-size: 25px;
-                        line-height: 63px;
-
-                    }
-
-                    .profile {
-                        .text-box {
-                            h6 {
+                    background-color: $border-bg-color;
+                    padding: 5px 15px;
+                    @include border-radius;
+                    .paragraph{
+                        .text-box{
+                            h6{
                                 font-size: 13px;
                                 font-weight: bold;
                             }
-
-                            p {
+                            p{
                                 color: $dark-grey;
                                 font-size: 12px;
                             }
                         }
                     }
 
-                    p {
-                        line-height: 28px;
-                        text-align: justify;
+                    h1 {
+                        line-height: 35px !important;
                     }
 
-                    .button-boxes {
-                        .arrow-up {
-                            a {
-                                i {
-                                    text-align: center;
-                                    padding: 8px 10px 8px 10px;
-                                    background-color: $green;
-                                    color: $white;
-                                    border-radius: 50%;
-                                }
-                            }
+                    .second-part-tags {
+                        a {
+                            color: $dark-grey !important;
+                            margin-left: 10px;
+                            font-size: 13px;
 
-                            p {
-                                padding-left: 5px;
-                                font-size: 13px;
-                            }
-                        }
-
-                        .arrow-down {
-                            a {
-                                i {
-                                    text-align: center;
-                                    padding: 8px 10px 8px 10px;
-                                    background-color: $orange;
-                                    color: $white;
-                                    border-radius: 50%;
-                                }
-                            }
-
-                            p {
-                                padding-left: 5px;
-                                font-size: 13px;
-                            }
-                        }
-
-                        .button-comment {
-                            a {
-                                color: $white  !important;
-                                background-color: $blue;
-                                border: none;
-                                padding: 5px 15px;
-                                border-radius: 5px;
-                            }
-                        }
-
-                        .favorite-box {
-                            a {
-                                color: $white  !important;
-                                background-color: $violet;
-                                border: none;
-                                padding: 5px 15px;
-                                border-radius: 5px;
-                            }
-                        }
-
-                        .share-box {
-                            a {
-                                color: $white  !important;
-                                background-color: $blue;
-                                border: none;
-                                padding: 5px 15px;
-                                border-radius: 5px;
-                            }
-                        }
-
-                        .notifocation-box {
-                            a {
-                                color: $white  !important;
-                                background-color: $dark-blue;
-                                border: none;
-                                padding: 5px 15px;
-                                border-radius: 5px;
+                            &:hover {
+                                color: $blue  !important;
                             }
                         }
                     }
+
                 }
             }
         }
@@ -248,6 +358,8 @@ section {
 
 
 .footer {
+    padding: 0px 0 20px 0;
+
     .container-fluid {
         padding: 0 30px 0 30px;
 
@@ -259,6 +371,10 @@ section {
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 30px;
+                        @include transition;
+                        &:hover {
+                            color: $blue !important;
+                        }
                     }
                 }
             }
@@ -268,6 +384,184 @@ section {
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 30px;
+            }
+        }
+    }
+}
+
+.about {
+    .row {
+        .about-div {
+            margin-top: 120px;
+
+            h3 {
+                font-weight: 600 !important;
+            }
+        }
+    }
+}
+
+// check
+.contact {
+    margin-top: 60px;
+    padding: 0 50px;
+    margin-bottom: 30px;
+
+    h3 {
+        font-weight: bold;
+    }
+
+    h6 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .social-box-contact {
+        width: 20%;
+    }
+
+    .form-contact {
+        .error-input {
+            input {
+                width: 100%;
+                border: 1px solid $red;
+
+                &::placeholder {
+                    color: $red
+                }
+            }
+        }
+
+        input {
+            background-color: $border-bg-color;
+            border: none;
+            outline: none;
+            padding: 10px 0 10px 20px;
+            margin-top: 10px;
+            @include border-radius-5;
+            font-size: 13px;
+        }
+
+        .form-control {
+            background-color: $border-bg-color;
+            @include border-radius-5;
+            margin-top: 10px;
+            height: 295px;
+            resize: none;
+            border: none;
+            padding-top: 10px;
+            font-size: 13px;
+        }
+
+        button {
+            border: none;
+            background-color: $blue;
+            @include border-radius-5;
+            color: $white;
+            padding: 7px 15px;
+            font-size: 13px;
+            @include transition;
+
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+// chech2
+.register {
+    margin-top: 130px;
+    h3 {
+        font-weight: bold;
+    }
+    .border-register {
+        border-right: 1px solid $border-bottom-color !important;
+    }
+    form {
+        width: 65%;
+        height: 100%;
+        .show-hide-pass {
+            width: 100%;
+            position: relative;
+            i {
+                position: absolute;
+                top: 23px;
+                right: 10px;
+            }
+            .pass-msg {
+                font-size: 12px;
+            }
+        }
+        input {
+            background-color: $border-bg-color;
+            @include border-radius-5;
+            border: none;
+            margin-top: 15px;
+            padding: 7px 0 7px 10px;
+            outline: none;
+            font-size: 14px;
+            &::placeholder {
+                font-size: 13px;
+            }
+        }
+        .login {
+            @include border-radius-5;
+            padding: 7px 0 7px 10px;
+            background-color: $blue;
+            color: $white;
+            text-align: center;
+            @include transition;
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+        select {
+            font-size: 14px;
+            margin-top: 10px;
+            padding: 3px 0 3px 10px;
+            background-color: $border-bg-color;
+            border: none;
+            @include border-radius-5;
+            outline: none;
+        }
+        span.loginwith {
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            white-space: nowrap;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 42%;
+                height: 1px;
+                background: $dark-grey;
+                vertical-align: middle;
+                margin-right: 3%;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 45%;
+                height: 1px;
+                background: $dark-grey;
+                vertical-align: middle;
+                margin-left: 3%;
+            }
+        }
+        label {
+            margin-top: 12px;
+            margin-left: 5px;
+            font-size: 14px;
+            span {
+                color: $blue;
             }
         }
     }

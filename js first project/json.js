@@ -1,4 +1,4 @@
-function loaddata() {
+function loadData() {
     const ajaxtask = new XMLHttpRequest();
     ajaxtask.open('Get', 'data.json', true);
     ajaxtask.onload = async function () {
@@ -83,4 +83,4 @@ function loaddata() {
     }
     ajaxtask.send();
 }
-loaddata();
+loadData();

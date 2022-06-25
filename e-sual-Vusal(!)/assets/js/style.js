@@ -26,3 +26,72 @@ $(document).ready(function() {
     
 });
 
+// register
+$(document).ready(function() {
+    const password = $('#password');
+    $('#eye').click(function() {
+        if (password.prop('type') == 'password') {
+            $(this).removeClass('fa-solid fa-eye-slash');
+            $(this).addClass('fa-solid fa-eye');
+            password.attr('type', 'text');
+        } else {
+            $(this).removeClass('fa-solid fa-eye');
+            $(this).addClass('fa-solid fa-eye-slash');
+            password.attr('type', 'password');
+        }
+    });
+});
+$(document).ready(function() {
+    const password = $('#password2');
+    $('#eye2').click(function() {
+        if (password.prop('type') == 'password') {
+            $(this).removeClass('fa-solid fa-eye-slash');
+            $(this).addClass('fa-solid fa-eye');
+            password.attr('type', 'text');
+        } else {
+            $(this).removeClass('fa-solid fa-eye');
+            $(this).addClass('fa-solid fa-eye-slash');
+            password.attr('type', 'password');
+        }
+    })
+});
+$(document).ready(function() {
+    const password = $('#password3');
+    $('#eye3').click(function() {
+        if (password.prop('type') == 'password') {
+            $(this).removeClass('fa-solid fa-eye-slash');
+            $(this).addClass('fa-solid fa-eye');
+            password.attr('type', 'text');
+        } else {
+            $(this).removeClass('fa-solid fa-eye');
+            $(this).addClass('fa-solid fa-eye-slash');
+            password.attr('type', 'password');
+        }
+    })
+});
+$(document).ready(function() {
+    $("#password2").keyup(function() {
+        $(".pass-msg").empty();
+        $pass2 = $("#password2").val();
+        $pass3 = $("#password3").val();
+        if ($pass2 == $pass3) {
+            $(".pass-msg").append(" <b>Şifrə düzgündür</b>.");
+            $(".pass-msg").css("color", "#586EFF");
+        } else {
+            $(".pass-msg").append(" <b>Şifrə düzgün deyil</b>.");
+            $(".pass-msg").css("color", "red");
+        }
+    });
+    $("#password3").keyup(function() {
+        $(".pass-msg").empty();
+        $pass2 = $("#password2").val();
+        $pass3 = $("#password3").val();
+        if ($pass2 == $pass3) {
+            $(".pass-msg").append(" <b>Şifrə düzgündür</b>.");
+            $(".pass-msg").css("color", "#586EFF");
+        } else {
+            $(".pass-msg").append(" <b>Şifrə düzgün deyil</b>.");
+            $(".pass-msg").css("color", "red");
+        }
+    });
+});
