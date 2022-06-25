@@ -268,23 +268,23 @@ function myFunction(a, b) {
 console.log(myFunction(3, 5))
 
 //filter tekrar
-var myfilter = myArrays3.filter((e) => e > 18)
-console.log(myfilter)
+// var myfilter = myArrays3.filter((e) => e > 18)
+// console.log(myfilter)
 
 //map
 
-var mymap = myArrays2.map((e) => e)
-console.log(mymap.splice(7, 11))
+// var mymap = myArrays2.map((e) => e)
+// console.log(mymap.splice(7, 11))
 
 //Dom elements
 //document-object-model
 
-document.querySelector('#vusal').innerHTML = 'vusal' //id
-document.querySelector('.rahide').innerHTML = 'rahide' //class
+// document.querySelector('#vusal').innerHTML = 'vusal' 
+// document.querySelector('.rahide').innerHTML = 'rahide' 
 
-document.getElementById("vusal").style.width = '100px';
-document.getElementById("vusal").style.height = '100px';
-document.getElementById("vusal").style.backgroundColor = 'red';
+// document.getElementById("vusal").style.width = '100px';
+// document.getElementById("vusal").style.height = '100px';
+// document.getElementById("vusal").style.backgroundColor = 'red';
 
 
 // element.addEventListener("click", myFunction);
@@ -300,24 +300,47 @@ document.getElementById("vusal").style.backgroundColor = 'red';
 // }
 
 
-document.querySelectorAll("#credit").forEach(e => e.click())
+// document.querySelectorAll("#credit").forEach(e => e.click())
 
 /*sira ile emeliyyatlar; yerine yetirmek ucun*/
-const first = () => {
-    setTimeout(() => {
-        console.log('first')
-    }, 1000);
-    second();
-};
-const second = () => {
-    setTimeout(() => {
-        console.log('second')
-    }, 2000);
-    third();
-};
-const third = () => {
-    setTimeout(() => {
-        console.log('third')
-    }, 3000);
-};
-first();
+// const first = () => {
+//     setTimeout(() => {
+//         console.log('first')
+//     }, 1000);
+//     second();
+// };
+// const second = () => {
+//     setTimeout(() => {
+//         console.log('second')
+//     }, 2000);
+//     third();
+// };
+// const third = () => {
+//     setTimeout(() => {
+//         console.log('third')
+//     }, 3000);
+// };
+// first();
+
+//\
+
+// var deleteLi = document.querySelector('.delete');
+// deleteLi.addEventListener('click', function(e) {
+//     e.preventDefault();
+
+//     var icaze = confirm("silmek istediyinize eminsizmi?")
+//     if (icaze) {
+//         return true
+//     }
+// })
+
+
+// function myFunction() {
+//     var x = document.querySelector('#myInput');
+//     document.getElementById('gonder').innerHTML = `menim axtartdigim mehsul: ${x.value}`;
+// }
+
+
+function myFunction5() {
+    'salam'
+}
